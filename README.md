@@ -1,4 +1,4 @@
-# __
+# __Tic Tac Toe
 
 #####
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-_
+_A site that keeps track of the game Tic Tac Toe, and tells you who wins.
 
 ## Setup
 

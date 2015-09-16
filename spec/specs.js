@@ -1,5 +1,13 @@
-describe('TicTacToe', function() {
-  it("accepts a user input and puts it on their correct space", function() {
-    var testTicTacToe = new Game("playerOne", "x", "A1");
-    expect(testTicTacToe.firstPlay).to.equal("x", "A1");
-  });
+describe('Player', function() {
+    it("returns the player's mark", function() {
+      var testPlayer = new Player(1);
+      expect(testPlayer.mark()).to.equal("X");
+   });
+});
+
+// describe('Space', function() {
+//     it("returns the player's mark", function() {
+//       var testSpace = new Space(1,2);
+//       expect(testSpace.x-coordinate).to.equal(1);
+//    });
+// });
