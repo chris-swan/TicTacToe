@@ -1,16 +1,3 @@
-function Player(player) {
-  this.player = player;
-};
-
-Player.prototype.mark = function() {
-  // var playerMark = this.playerNumber;
-    if (this.player === "X") {
-      return "X";
-    } else {
-      return "O";
-    }
-};
-
 function Board(positionOne, positionTwo, positionThree, positionFour, positionFive, positionSix, positionSeven, positionEight, positionNine) {
   this.positionOne = positionOne;
   this.positionTwo = positionTwo;
@@ -26,32 +13,18 @@ function Board(positionOne, positionTwo, positionThree, positionFour, positionFi
 Board.prototype.createBoard = function() {
   var boardSetUP = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return boardSetUP;
-}
-
-
-function Space(position) {
-  this.position = position;
 };
 
-Space.prototype.positionTaken = function(player, position) {
-  var positionTaken = (this.player, this.position);
-  return positionTaken;
-
+Board.prototype.win = function() {
+  if (this.positionOne == "X" && this.positionTwo == "X" && this.positionThree == "X") {
+    return "X wins";
+  }
 };
 
-// Space.prototype.markedBy = function() {
-//
-//   var position =
-// }
+function PlayerOne(playerName) {
+  this.playerName = playerName;
+};
 
-// Winning variables = (x1, x2, x3) || (o1 o2  o3);
-
-
-
-
-                //Y column
-//                |
-//                V
-// Game board: (1), (2), (3),
-//             (4), (5), (6),
-//    row x->   (7), (8), (9),
+function PlayerTwo(playerName) {
+  this.playerName = playerName;
+};
