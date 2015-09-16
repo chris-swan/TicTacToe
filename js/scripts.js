@@ -2,7 +2,7 @@ function Player(playerNumber) {
   this.playerNumber = playerNumber;
 };
 
-Player.prototype.mark = function(playerNumber) {
+Player.prototype.mark = function() {
   // var playerMark = this.playerNumber;
     if (this.playerNumber === 1) {
       return "X";
@@ -11,14 +11,25 @@ Player.prototype.mark = function(playerNumber) {
     }
 };
 
+function Space(row, column) {
+  this.row = row;
+  this.column = column;
+};
 
-// function Space(x-coordinate) {
-//   this.x-coordinate = x-coordinate;
-// }
+Space.prototype.coordinate = function() {
+  if (this.row === 1) {
+    return 1;
+  } else {
+    return 2;
+  }
+};
 
 
 
 
+                //Y column
+//                |
+//                V
 // Game board: (1, 1), (1, 2), (1, 3),
 //             (2,1), (2, 2), (2, 3),
-//             (3,1), (3, 2), (3, 3),
+//    row x->   (3,1), (3, 2), (3, 3),
