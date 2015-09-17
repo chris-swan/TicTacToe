@@ -66,23 +66,6 @@
   border-top:1px solid #000;
 }
 
-
-
-
-
-
-/*<tr id="row1">
-  <td class="Positionone clickable"></td>
-  <td class="Positiontwo clickable"></td>
-  <td class="Positionthree clickable"></td>
-</tr>
-<tr id="row2">
-  <td class="Positionfour clickable"></td>
-  <td class="Positionfive clickable"></td>
-  <td class="Positionsix clickable"></td>
-</tr>
-<tr id="row3">
-  <td class="Positionseven clickable"></td>
-  <td class="Positioneight clickable"></td>
-  <td class="Positionnine clickable"></td>
-</tr>*/
+/*.winner {
+    display: none;
+}*/
