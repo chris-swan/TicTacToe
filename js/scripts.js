@@ -155,13 +155,13 @@ var playerO = new PlayerO(" ");
 //Jquery stuff:
 $(document).ready(function() {
 
+
+//add user names and begin play:
   $("form#TicTacToePlayer").submit(function() {
     event.preventDefault();
 
     playerX.playerName = $("input#playerX-name").val();
-    playerX.playerColor =$("input#playerX-color").val();
     playerO.playerName = $("input#playerO-name").val();
-    playerO.playerColor = $("input#playerO-color").val();
 
     $(".playerX-name").empty().val();
     $(".playerX-name").append(playerX.playerName);

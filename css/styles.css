@@ -1,8 +1,14 @@
+
+
+input{
+  text-align:center;
+}
 .PositionOne {
     width:100px;
     height:100px;
     border-right:1px solid #000;
     border-bottom:1px solid #000;
+    text-align:center;
 }
 .PositionTwo {
     width:100px;
@@ -10,6 +16,7 @@
     border-left:1px solid #000;
     border-right:1px solid #000;
     border-bottom:1px solid #000;
+    text-align:center;
 }
 
 .PositionThree {
@@ -17,6 +24,7 @@
     height:100px;
     border-left:1px solid #000;
     border-bottom:1px solid #000;
+    text-align:center;
 }
 
 .PositionFour {
@@ -25,6 +33,7 @@
     border-right:1px solid #000;
     border-top:1px solid #000;
     border-bottom:1px solid #000;
+    text-align:center;
 }
 
 .PositionFive {
@@ -34,6 +43,7 @@
     border-right:1px solid #000;
     border-top:1px solid #000;
     border-bottom:1px solid #000;
+    text-align:center;
 }
 
 .PositionSix {
@@ -42,6 +52,7 @@
     border-left:1px solid #000;
     border-top:1px solid #000;
     border-bottom:1px solid #000;
+    text-align:center;
 }
 
 .PositionSeven {
@@ -49,6 +60,7 @@
     height:100px;
     border-right:1px solid #000;
     border-top:1px solid #000;
+    text-align:center;
 }
 
 .PositionEight {
@@ -57,6 +69,7 @@
     border-left:1px solid #000;
     border-right:1px solid #000;
     border-top:1px solid #000;
+    text-align:center;
 }
 
 .PositionNine {
@@ -64,6 +77,7 @@
   height:100px;
   border-left:1px solid #000;
   border-top:1px solid #000;
+  text-align:center;
 }
 
 .winner {
