@@ -42,80 +42,80 @@ Board.prototype.winner = function() {
   }
 }
 
-Board.prototype.placeX = function(clickedSquareNumber) {
-  if (clickedSquareNumber == 1) {
+Board.prototype.placeX = function(clickedPositionNumber) {
+  if (clickedPositionNumber == 1) {
     if (this.positionOne == " ") {
       this.positionOne = "X";
     }
-  } else if (clickedSquareNumber == 2) {
+  } else if (clickedPositionNumber == 2) {
     if (this.positionTwo == " ") {
       this.positionTwo = "X";
     }
-  } else if (clickedSquareNumber == 3) {
+  } else if (clickedPositionNumber == 3) {
     if (this.positionThree == " ") {
       this.positionThree = "X";
     }
-  } else if (clickedSquareNumber == 4) {
+  } else if (clickedPositionNumber == 4) {
     if (this.positionFour == " ") {
       this.positionFour = "X";
     }
-  } else if (clickedSquareNumber == 5) {
+  } else if (clickedPositionNumber == 5) {
     if (this.positionFive == " ") {
       this.positionFive = "X";
     }
-  } else if (clickedSquareNumber == 6) {
+  } else if (clickedPositionNumber == 6) {
     if (this.positionSix == " ") {
       this.positionSix = "X";
     }
-  } else if (clickedSquareNumber == 7) {
+  } else if (clickedPositionNumber == 7) {
     if (this.positionSeven == " ") {
       this.positionSeven = "X";
     }
-  } else if (clickedSquareNumber == 8) {
+  } else if (clickedPositionNumber == 8) {
     if (this.positionEight == " ") {
       this.positionEight = "X";
     }
-  } else if (clickedSquareNumber == 9) {
+  } else if (clickedPositionNumber == 9) {
     if (this.positionNine == " ") {
       this.positionNine = "X";
     }
   }
 }
 
-Board.prototype.placeO = function(clickedSquareNumber) {
-  if (clickedSquareNumber == 1) {
+Board.prototype.placeO = function(clickedPositionNumber) {
+  if (clickedPositionNumber == 1) {
     if (this.positionOne == " ") {
       this.positionOne = "O";
     }
-  } else if (clickedSquareNumber == 2) {
+  } else if (clickedPositionNumber == 2) {
     if (this.positionTwo == " ") {
       this.positionTwo = "O";
     }
-  } else if (clickedSquareNumber == 3) {
+  } else if (clickedPositionNumber == 3) {
     if (this.positionThree == " ") {
       this.positionThree = "O";
     }
-  } else if (clickedSquareNumber == 4) {
+  } else if (clickedPositionNumber == 4) {
     if (this.positionFour == " ") {
       this.positionFour = "O";
     }
-  } else if (clickedSquareNumber == 5) {
+  } else if (clickedPositionNumber == 5) {
     if (this.positionFive == " ") {
       this.positionFive = "O";
     }
-  } else if (clickedSquareNumber == 6) {
+  } else if (clickedPositionNumber == 6) {
     if (this.positionSix == " ") {
       this.positionSix = "O";
     }
-  } else if (clickedSquareNumber == 7) {
+  } else if (clickedPositionNumber == 7) {
     if (this.positionSeven == " ") {
       this.positionSeven = "O";
     }
-  } else if (clickedSquareNumber == 8) {
+  } else if (clickedPositionNumber == 8) {
     if (this.positionEight == " ") {
       this.positionEight = "O";
     }
-  } else if (clickedSquareNumber == 9) {
+  } else if (clickedPositionNumber == 9) {
     if (this.positionNine == " ") {
       this.positionNine = "O";
     }
@@ -136,23 +136,21 @@ Board.prototype.clearAll = function() {
 
 // PlayerX prototype :
 
-function PlayerX(playerName, playerColor) {
+function PlayerX(playerName) {
   this.playerName = playerName;
-  this.playerColor = playerColor;
 }
 
 // PlayerO prototype :
 
-function PlayerO(playerName, playerColor) {
+function PlayerO(playerName) {
   this.playerName = playerName;
-  this.playerColor = playerColor;
 }
 
 // Initialize variables :
 
 var board = new Board(" ", " ", " ", " ", " ", " ", " ", " ", " ", "X");
-var playerX = new PlayerX(" ", " ");
-var playerO = new PlayerO(" ", " ");
+var playerX = new PlayerX(" ");
+var playerO = new PlayerO(" ");
 
 //Jquery stuff:
 $(document).ready(function() {
