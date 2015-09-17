@@ -11,10 +11,30 @@
     <br>
     <br>
 
-    <form id="TicTacToe">
+    <form id="TicTacToePlayer">
+      <div class =col-md-2></div>
+      <div class=col-md-4>
+        <div class ="Form-group">
+          <center><label for="PlayerX-name">Enter Player X's Name</label></center>
+          <input type="text" name="playerX-name" id="playerX-name" class="form-control">
+        </div>
+      </div>
+
+      <div class=col-md-4>
+        <div class ="Form-group">
+          <center><label for="PlayerO-name">Enter Player O's Name</label></center>
+          <input type="text" name="playerO-name" id="playerO-name" class="form-control">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Begin</button>
+
+    </form>
     <div id="board">
+      <div class=col-md-4></div>
       <div class=col-md-6>
-        <center>
+
+          <span class="turn-title"><h2><span class="turn"></span>'s Turn!</h2></span>
           <table>
             <tr id="row1">
               <td class="PositionOne clickable"></td>
@@ -32,18 +52,18 @@
               <td class="PositionNine clickable"></td>
           </tr>
         </table>
-        <center>
     </div>
   </div>
 
-    <button type="submit" class="btn btn-primary">Begin</button>
-    </form>
+  <div class="winner">
+          <div class="col-md-3"></div>
+          <div class="col-md-6"><center>
+          WINNER!
+          </center></div>
+          <div class="col-md-3"></div>
+        </div>
 
-    <div class="col-md-6">
-      <div id="show-price">
-        <p>Start the game! <span class="start"></span></p>
       </div>
-    </div>
 
   </body>
 </html>

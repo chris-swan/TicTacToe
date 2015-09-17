@@ -157,12 +157,26 @@ var playerO = new PlayerO(" ", " ");
 //Jquery stuff:
 $(document).ready(function() {
 
-  $("form#TicTacToe").submit(function() {
+  $("form#TicTacToePlayer").submit(function() {
     event.preventDefault();
 
-    $("positionOne").click(function() {
+    playerX.playerName = $("input#playerX-name").val();
+    playerX.playerColor =$("input#playerX-color").val();
+    playerO.playerName = $("input#playerO-name").val();
+    playerO.playerColor = $("input#playerO-color").val();
+
+    $(".playerX-name").empty().val();
+    $(".playerX-name").append(playerX.playerName);
+    $(".playerO-name").empty().val();
+    $(".playerO-name").append(playerX.playerName);
+    $(".turn").empty().val();
+    $(".turn").append(playerX.playerName);
+
+  });
+
+    $(".positionOne").click(function() {
       if (board.turn == "X") {
-        board.turn == "O";
+        board.turn = "O";
         $(".positionOne").empty().val();
         $(".positionOne").append("X");
         board.positionOne = "X";
@@ -173,8 +187,9 @@ $(document).ready(function() {
           $(".turn-title").toggle();
           $(".winner").toggle();
           board.clearAll();
+          }
         } else {
-          board.turn == "X";
+          board.turn = "X";
           $(".positionOne").empty().val();
           $(".positionOne").append("O");
           board.positionOne = "O";
@@ -189,8 +204,262 @@ $(document).ready(function() {
       }
       $(this).off();
       $(this).removeClass('positionOne clickable');
-
     });
 
-  });
+    $(".positionTwo").click(function() {
+      if (board.turn == "X") {
+        board.turn = "O";
+        $(".positionTwo").empty().val();
+        $(".positionTwo").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+          }
+        } else {
+          board.turn = "X";
+          $(".positionTwo").empty().val();
+          $(".positionTwo").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionTwo clickable');
+    });
+
+    $(".positionThree").click(function() {
+      if (board.turn == "X") {
+        board.turn = "O";
+        $(".positionThree").empty().val();
+        $(".positionThree").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+          }
+        } else {
+          board.turn = "X";
+          $(".positionThree").empty().val();
+          $(".positionThree").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionThree clickable');
+    });
+
+    $(".positionFour").click(function() {
+      if (board.turn == "X") {
+        board.turn = "O";
+        $(".positionFour").empty().val();
+        $(".positionFour").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+          }
+        } else {
+          board.turn = "X";
+          $(".positionFour").empty().val();
+          $(".positionFour").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionFour clickable');
+    });
+
+    $(".positionFive").click(function() {
+      if (board.turn == "X") {
+        board.turn = "O";
+        $(".positionFive").empty().val();
+        $(".positionFive").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+          }
+        } else {
+          board.turn = "X";
+          $(".positionFive").empty().val();
+          $(".positionFive").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionFive clickable');
+    });
+
+    $(".positionSix").click(function() {
+      if (board.turn == "X") {
+        board.turn = "O";
+        $(".positionSix").empty().val();
+        $(".positionSix").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+          }
+        } else {
+          board.turn = "X";
+          $(".positionSix").empty().val();
+          $(".positionSix").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionSix clickable');
+    });
+
+    $(".positionSeven").click(function() {
+      if (board.turn == "X") {
+        board.turn = "O";
+        $(".positionSeven").empty().val();
+        $(".positionSeven").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+          }
+        } else {
+          board.turn = "X";
+          $(".positionSeven").empty().val();
+          $(".positionSeven").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionSeven clickable');
+    });
+
+    $(".positionEight").click(function() {
+      if (board.turn == "X") {
+        board.turn = "O";
+        $(".positionEight").empty().val();
+        $(".positionEight").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+          }
+        } else {
+          board.turn = "X";
+          $(".positionEight").empty().val();
+          $(".positionEight").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionEight clickable');
+    });
+
+    $(".positionNine").click(function() {
+      if (board.turn == "X") {
+        board.turn = "O";
+        $(".positionNine").empty().val();
+        $(".positionNine").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+          }
+        } else {
+          board.turn = "X";
+          $(".positionNine").empty().val();
+          $(".positionNine").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionNine clickable');
+    });
+
 });
