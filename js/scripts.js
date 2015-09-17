@@ -134,14 +134,12 @@ Board.prototype.clearAll = function() {
   $(".position-nine").off();
 }
 
-
 // PlayerX prototype :
 
 function PlayerX(playerName, playerColor) {
   this.playerName = playerName;
   this.playerColor = playerColor;
 }
-
 
 // PlayerO prototype :
 
@@ -150,13 +148,49 @@ function PlayerO(playerName, playerColor) {
   this.playerColor = playerColor;
 }
 
-
 // Initialize variables :
 
 var board = new Board(" ", " ", " ", " ", " ", " ", " ", " ", " ", "X");
 var playerX = new PlayerX(" ", " ");
 var playerO = new PlayerO(" ", " ");
 
-//Jquary stuff:
+//Jquery stuff:
+$(document).ready(function() {
 
+  $("form#TicTacToe").submit(function() {
+    event.preventDefault();
 
+    $("positionOne").click(function() {
+      if (board.turn == "X") {
+        board.turn == "O";
+        $(".positionOne").empty().val();
+        $(".positionOne").append("X");
+        board.positionOne = "X";
+        $(".turn").empty().val();
+        $(".turn").append(playerO.playerName);
+
+        if (board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        } else {
+          board.turn == "X";
+          $(".positionOne").empty().val();
+          $(".positionOne").append("O");
+          board.positionOne = "O";
+          $(".turn").empty().val();
+          $(".turn").append(playerX.playerName);
+
+          if(board.winner() == "winner") {
+          $(".turn-title").toggle();
+          $(".winner").toggle();
+          board.clearAll();
+        }
+      }
+      $(this).off();
+      $(this).removeClass('positionOne clickable');
+
+    });
+
+  });
+});

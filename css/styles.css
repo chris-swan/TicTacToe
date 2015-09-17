@@ -1,1 +1,88 @@
+.PositionOne {
+    width:100px;
+    height:100px;
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+}
+.PositionTwo {
+    width:100px;
+    height:100px;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+}
 
+.PositionThree {
+    width:100px;
+    height:100px;
+    border-left:1px solid #000;
+    border-bottom:1px solid #000;
+}
+
+.PositionFour {
+    width:100px;
+    height:100px;
+    border-right:1px solid #000;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+
+.PositionFive {
+    width:100px;
+    height:100px;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+
+.PositionSix {
+    width:100px;
+    height:100px;
+    border-left:1px solid #000;
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+
+.PositionSeven {
+    width:100px;
+    height:100px;
+    border-right:1px solid #000;
+    border-top:1px solid #000;
+}
+
+.PositionEight {
+    width:100px;
+    height:100px;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    border-top:1px solid #000;
+}
+
+.PositionNine {
+  width:100px;
+  height:100px;
+  border-left:1px solid #000;
+  border-top:1px solid #000;
+}
+
+
+
+
+
+
+/*<tr id="row1">
+  <td class="Positionone clickable"></td>
+  <td class="Positiontwo clickable"></td>
+  <td class="Positionthree clickable"></td>
+</tr>
+<tr id="row2">
+  <td class="Positionfour clickable"></td>
+  <td class="Positionfive clickable"></td>
+  <td class="Positionsix clickable"></td>
+</tr>
+<tr id="row3">
+  <td class="Positionseven clickable"></td>
+  <td class="Positioneight clickable"></td>
+  <td class="Positionnine clickable"></td>
+</tr>*/
