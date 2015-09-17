@@ -209,7 +209,7 @@ $(document).ready(function() {
         board.turn = "O";
         $(".positionTwo").empty().val();
         $(".positionTwo").append("X");
-        board.positionOne = "X";
+        board.positionTwo = "X";
         $(".turn").empty().val();
         $(".turn").append(playerO.playerName);
 
@@ -222,7 +222,7 @@ $(document).ready(function() {
           board.turn = "X";
           $(".positionTwo").empty().val();
           $(".positionTwo").append("O");
-          board.positionOne = "O";
+          board.positionTwo = "O";
           $(".turn").empty().val();
           $(".turn").append(playerX.playerName);
 
@@ -241,7 +241,7 @@ $(document).ready(function() {
         board.turn = "O";
         $(".positionThree").empty().val();
         $(".positionThree").append("X");
-        board.positionOne = "X";
+        board.positionThree = "X";
         $(".turn").empty().val();
         $(".turn").append(playerO.playerName);
 
@@ -254,7 +254,7 @@ $(document).ready(function() {
           board.turn = "X";
           $(".positionThree").empty().val();
           $(".positionThree").append("O");
-          board.positionOne = "O";
+          board.positionThree = "O";
           $(".turn").empty().val();
           $(".turn").append(playerX.playerName);
 
@@ -273,7 +273,7 @@ $(document).ready(function() {
         board.turn = "O";
         $(".positionFour").empty().val();
         $(".positionFour").append("X");
-        board.positionOne = "X";
+        board.positionFour = "X";
         $(".turn").empty().val();
         $(".turn").append(playerO.playerName);
 
@@ -286,7 +286,7 @@ $(document).ready(function() {
           board.turn = "X";
           $(".positionFour").empty().val();
           $(".positionFour").append("O");
-          board.positionOne = "O";
+          board.positionFour = "O";
           $(".turn").empty().val();
           $(".turn").append(playerX.playerName);
 
@@ -305,7 +305,7 @@ $(document).ready(function() {
         board.turn = "O";
         $(".positionFive").empty().val();
         $(".positionFive").append("X");
-        board.positionOne = "X";
+        board.positionFive = "X";
         $(".turn").empty().val();
         $(".turn").append(playerO.playerName);
 
@@ -318,7 +318,7 @@ $(document).ready(function() {
           board.turn = "X";
           $(".positionFive").empty().val();
           $(".positionFive").append("O");
-          board.positionOne = "O";
+          board.positionFive = "O";
           $(".turn").empty().val();
           $(".turn").append(playerX.playerName);
 
@@ -337,7 +337,7 @@ $(document).ready(function() {
         board.turn = "O";
         $(".positionSix").empty().val();
         $(".positionSix").append("X");
-        board.positionOne = "X";
+        board.positionSix = "X";
         $(".turn").empty().val();
         $(".turn").append(playerO.playerName);
 
@@ -350,7 +350,7 @@ $(document).ready(function() {
           board.turn = "X";
           $(".positionSix").empty().val();
           $(".positionSix").append("O");
-          board.positionOne = "O";
+          board.positionSix = "O";
           $(".turn").empty().val();
           $(".turn").append(playerX.playerName);
 
@@ -369,7 +369,7 @@ $(document).ready(function() {
         board.turn = "O";
         $(".positionSeven").empty().val();
         $(".positionSeven").append("X");
-        board.positionOne = "X";
+        board.positionSeven = "X";
         $(".turn").empty().val();
         $(".turn").append(playerO.playerName);
 
@@ -382,7 +382,7 @@ $(document).ready(function() {
           board.turn = "X";
           $(".positionSeven").empty().val();
           $(".positionSeven").append("O");
-          board.positionOne = "O";
+          board.positionSeven = "O";
           $(".turn").empty().val();
           $(".turn").append(playerX.playerName);
 
@@ -401,7 +401,7 @@ $(document).ready(function() {
         board.turn = "O";
         $(".positionEight").empty().val();
         $(".positionEight").append("X");
-        board.positionOne = "X";
+        board.positionEight = "X";
         $(".turn").empty().val();
         $(".turn").append(playerO.playerName);
 
@@ -414,7 +414,7 @@ $(document).ready(function() {
           board.turn = "X";
           $(".positionEight").empty().val();
           $(".positionEight").append("O");
-          board.positionOne = "O";
+          board.positionEight = "O";
           $(".turn").empty().val();
           $(".turn").append(playerX.playerName);
 
@@ -433,7 +433,7 @@ $(document).ready(function() {
         board.turn = "O";
         $(".positionNine").empty().val();
         $(".positionNine").append("X");
-        board.positionOne = "X";
+        board.positionNine = "X";
         $(".turn").empty().val();
         $(".turn").append(playerO.playerName);
 
@@ -446,7 +446,7 @@ $(document).ready(function() {
           board.turn = "X";
           $(".positionNine").empty().val();
           $(".positionNine").append("O");
-          board.positionOne = "O";
+          board.positionNine = "O";
           $(".turn").empty().val();
           $(".turn").append(playerX.playerName);
 
