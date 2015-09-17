@@ -1,6 +1,11 @@
-describe('Board', function() {
-  it("sets up 9 spaces.", function() {
-    var testBoard = new Board(" ", " ", " ", " ", " ", " ", " ", " ", " ");
+// Tests for Board :
+
+describe("Board", function() {
+
+  it("it creates a Board with specified properties.", function() {
+    var testBoard = new Board(" ", " ", " ",
+                              " ", " ", " ",
+                              " ", " ", " ");
     expect(testBoard.positionOne).to.equal(" ");
     expect(testBoard.positionTwo).to.equal(" ");
     expect(testBoard.positionThree).to.equal(" ");
@@ -11,38 +16,85 @@ describe('Board', function() {
     expect(testBoard.positionEight).to.equal(" ");
     expect(testBoard.positionNine).to.equal(" ");
   });
-  it("finds a one row winner.", function() {
-    var testBoard = new Board("X", "X", "X", " ", " ", " ", " ", " ", " ");
-    expect(testBoard.win()).to.equal("X wins");
+
+  it("it finds a simple winner.", function() {
+    var testBoard = new Board("X", "X", "X",
+                              " ", " ", " ",
+                              " ", " ", " ");
+    expect(testBoard.winner()).to.equal("winner");
   });
+
+  it("it finds a simple loser.", function() {
+    var testBoard = new Board("X", "O", "X",
+                              " ", " ", " ",
+                              " ", " ", " ");
+    expect(testBoard.winner()).to.equal("no winner");
+  });
+
+  it("it finds a diagonal winner with PlayerX.", function() {
+    var testBoard = new Board("X", "O", "X",
+                              "O", "X", " ",
+                              " ", " ", "X");
+    expect(testBoard.winner()).to.equal("winner");
+  });
+
+  it("it finds a diagonal winner with PlayerO.", function() {
+    var testBoard = new Board("O", "X", "X",
+                              " ", "O", "X",
+                              " ", " ", "O");
+    expect(testBoard.winner()).to.equal("winner");
+  });
+
+  it("it finds some other winner I randomly wrote.", function() {
+    var testBoard = new Board("O", "O", "X",
+                              "O", "X", "X",
+                              "O", "X", "O");
+    expect(testBoard.winner()).to.equal("winner");
+  });
+
+  it("it finds some a cat's game.", function() {
+    var testBoard = new Board("X", "O", "X",
+                              "O", "X", "X",
+                              "O", "X", "O");
+    expect(testBoard.winner()).to.equal("cat's game");
+  });
+
+  it("it can place an X in a position.", function() {
+    var testBoard = new Board("X", "O", "X",
+                              "O", "X", "X",
+                              "O", "X", " ");
+    testBoard.placeX(9);
+    expect(testBoard.positionNine).to.equal("X");
+  });
+
+  it("it can place an O in a position.", function() {
+    var testBoard = new Board("X", "O", "X",
+                              "O", " ", "X",
+                              "O", "X", "O");
+    testBoard.placeO(5);
+    expect(testBoard.positionFive).to.equal("O");
+  });
+
 });
 
-describe("PlayerOne", function() {
-  it("it creates a Player.", function() {
-    var testPlayerOne = new PlayerOne("Jenna");
-    expect(testPlayerOne.playerName).to.equal("Jenna");
+// Tests for PlayerX :
+
+describe("PlayerX", function() {
+
+  it("it creates a Player with certain properties.", function() {
+    var testPlayerX = new PlayerX("Chris");
+    expect(testPlayerX.playerName).to.equal("Chris");
   });
+
 });
 
-describe("PlayerTwo", function() {
-  it("it creates a Player.", function() {
-    var testPlayerTwo = new PlayerTwo("Jenna");
-    expect(testPlayerTwo.playerName).to.equal("Jenna");
-  });
-});
-//
-// // Board.prototype.markBoard = function() {
-// //   var board = {one:"X", two:"O"};
-// //var board= {1:"X", 2:"O" 3:"X" 4:"O"....}
-//   {X, X X.
-//   " ", " ", " "}
+// Tests for PlayerO :
 
-//   board = [e,e,"x",e,e,e,"o",e,e];
-//   this[space] = player;
-//
-//   if (board[space] != e) {
-//     cant do anything
-//   } else {
-//     board[space] = mark;
-//   }
-//   }
+describe("PlayerO", function() {
+
+  it("it creates a Player with certain properties.", function() {
+    var testPlayerO = new PlayerO("Jenna");
+    expect(testPlayerO.playerName).to.equal("Jenna");
+  });
+
+});
